@@ -2,7 +2,7 @@ import express from "express";
 import mongoose from "mongoose";
 import cors from "cors";
 import dotenv from "dotenv";
-import inquiryRoutes from "./routes/inquiry.js";
+import inquiryRoutes from "./routes/Inquiry.js";
 
 dotenv.config();
 
