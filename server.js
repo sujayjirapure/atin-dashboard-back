@@ -9,8 +9,17 @@ dotenv.config();
 
 const app = express();
 
-/* MIDDLEWARE */
-app.use(cors());
+/* ✅ CORS – STEP 3 GOES HERE */
+app.use(
+  cors({
+    origin: [
+      "http://localhost:3000",
+      "https://atin-dashboard.vercel.app",
+    ],
+    methods: ["GET"],
+  })
+);
+
 app.use(express.json());
 
 /* DATABASE */
