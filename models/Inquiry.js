@@ -8,6 +8,10 @@ const InquirySchema = new mongoose.Schema(
     email: String,
     address: String,
     issue: String,
+    image: {
+      type: String,
+      default: "",
+    },
   },
   { timestamps: true }
 );
