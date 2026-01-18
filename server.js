@@ -15,6 +15,7 @@ app.use(
     origin: [
       "http://localhost:3000",
       "https://atin-dashboard.vercel.app",
+      "https://wondrous-arithmetic-62b057.netlify.app",
     ],
     methods: ["GET"],
   })
